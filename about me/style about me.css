@@ -1,0 +1,36 @@
+
+.container {
+    display: flex;
+    }
+
+img {
+max-width: 100px;
+max-height: 100px;
+float: left;
+position: fixed;
+    bottom: 65px;
+}
+
+.text {
+font-size: 20px;
+float: left;
+position: fixed;
+    bottom: 65px;
+    left: 105px;
+}
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #c7b186;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #a89058;
+}
