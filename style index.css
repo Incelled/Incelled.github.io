@@ -1,0 +1,35 @@
+
+.container {
+display: flex;
+}
+
+img {
+max-width: 100px;
+max-height 100px;
+float: left;
+}
+
+.text {
+font-size: 20px;
+float: left;
+}
+header {
+    font-size: 50px;
+    font-weight: bold;
+   
+    background-color: #c7b186;
+    border: 2px solid #a89058;
+    border-radius: 5px;
+    padding: 30px 5px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+    
+    
+}
+
+h2 {
+    font-size: 35px;
+}
