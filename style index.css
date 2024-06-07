@@ -14,43 +14,56 @@ h1 {
   font-size: 35px;   
 }
 
-h2 {
+a {
   font-size: 35px;
+  transition: 0.3s;
 }
 
-/*drop down button*/
-.dropbtn {
+/* sidebar*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #cfbd97;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border: 
+  border-color: #a89058;
+  
+
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #a89058;
+}
+
+#content {
+  margin-left: 0;
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+#toggle-btn {
+  transition: 0.5s;
+  position: absolute;
+  z-index: 1;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 100%;
   background-color: #cfbd97;
   color: rgb(0, 0, 0);
-  padding: 16px;
-  font-size: 16px;
-  border: 2px solid #a89058;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #cfbd97;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #a89058;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #a89058;
+  padding: 10px 14px;
+  border: none;
 }
