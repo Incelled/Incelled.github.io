@@ -2,14 +2,17 @@
 header {
   font-size: 50px;
   font-weight: bold;
-  
   background-color: #c7b186;
   border: 2px solid #a89058;
   border-radius: 5px;
   padding: 30px 5px;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box; 
 }
-
 h1 {
   font-size: 35px;   
 }
@@ -20,6 +23,7 @@ a {
 }
 
 /* sidebar*/
+/* sidebar */
 .sidebar {
   height: 100%;
   width: 0;
@@ -30,10 +34,8 @@ a {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  border: 
-  border-color: #a89058;
-  
-
+  border: 2px solid #a89058;
+  z-index: 1;
 }
 
 .sidebar a {
@@ -57,8 +59,10 @@ a {
 
 #toggle-btn {
   transition: 0.5s;
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  top: 35px; /* Adjust based on the height of the header */
+  left: 20px;
+  z-index: 3; /* Make sure the button is on top of the header */
   font-size: 20px;
   cursor: pointer;
   border-radius: 100%;
