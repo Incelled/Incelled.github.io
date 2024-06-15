@@ -9,7 +9,6 @@ font-style: normal;
 
 /*header*/
 header {
-
 font-size: 50px;
 font-weight: bold;
 background-color: #c7b186;
@@ -24,10 +23,24 @@ left: 0;
 box-sizing: border-box; 
 }
 body {
-background-color: #e8e8be;
-}
-h1 {
-font-size: 35px;   
+  font-family: 'Roboto', sans-serif;
+  background-color: #e8e8be;
+  text-align: center;
+  
+  
+  h1, h2, h3, h4, h5{
+    font-size: 20px;
+    font-weight: normal; 
+    background-color: #d6c5a3;
+    padding: 25px;
+    border-radius: 25px;
+  }
+h6 {
+  font-size: 35px;
+  float: left;
+  position: fixed;
+      bottom: 10px;
+      left: 125px;
 }
 
 a {
@@ -35,8 +48,6 @@ font-size: 35px;
 transition: 0.3s;
 }
 
-/* sidebar*/
-/* sidebar */
 .sidebar {
 height: 100%;
 width: 0;
@@ -58,6 +69,7 @@ font-size: 25px;
 color: rgb(0, 0, 0);
 display: block;
 transition: 0.3s;
+position: relative;
 }
 
 .sidebar a:hover {
@@ -95,11 +107,4 @@ max-height: 100px;
 float: left;
 position: fixed;
 bottom: 65px;
-}
-.text {
-  font-size: 20px;
-  float: left;
-  position: fixed;
-      bottom: 65px;
-      left: 105px;
 }
